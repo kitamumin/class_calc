@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+
+    <style>
+        #calc {
+            margin: 5px;
+            width: 280px;
+        }
+
+        #resultBox {
+            margin:5px;
+            height: 60px;
+            border: solid 2px blue;
+            position: relative;
+        }
+
+        #resultBox>div {
+            position: absolute;
+            margin:5px;
+            text-align: right;
+        }
+
+        #expr {
+            right:0;
+            font-size: 14px;
+            color:#888888;
+        }
+
+        #result {
+            right:0;
+            bottom: 0;
+            font-size: 22px;
+        }
+
+        td {
+            height: 50px;
+            width: 70px;
+            text-align: center;
+            margin: 5px;
+            border: solid 1px black;
+        }
+
+        .num {
+            background-color: #eeeeee;
+        }
+
+        .op {
+            background-color: #dddddd;;
+        }
+
+        #ac {
+            background-color: #ffdddd;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="calc">
+
+
+        <div id="resultBox">
+            <div id="expr">0</div>
+            <div id="result">0</div>
+        </div>
+        <table>
+            <tr>
+                <td class="num kazu" data-index-id = 7 >7</td>
+                <td class="num kazu" data-index-id = 8 >8</td>
+                <td class="num kazu" data-index-id = 9 >9</td>
+                <td class="num kigou" data-index-id = '/'>÷</td>
+            </tr>
+            <tr>
+                <td class="num kazu" data-index-id = 4 >4</td>
+                <td class="num kazu" data-index-id = 5 >5</td>
+                <td class="num kazu" data-index-id = 6 >6</td>
+                <td class="num kigou" data-index-id = '*'>×</td>
+            </tr>
+            <tr>
+                <td class="num kazu" data-index-id = 1 >1</td>
+                <td class="num kazu" data-index-id = 2 >2</td>
+                <td class="num kazu" data-index-id = 3 >3</td>
+                <td class="num kigou" data-index-id = '-'>-</td>
+            </tr>
+            <tr>
+                <td id="ac">AC</td>
+                <td class="num zero" id = "zero" data-index-id = 0 >0</td>
+                <td id = 'equal_btn'>=</td>
+                <td class="num kazu" data-index-id = '+'>+</td>
+            </tr>
+        </table>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
